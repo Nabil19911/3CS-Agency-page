@@ -11695,17 +11695,7 @@ p {
 .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 0;
-  margin-bottom: 1rem;
-}
-.page-section h3.section-subheading,
-.page-section .section-subheading.h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 768px) {
@@ -11768,7 +11758,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #008080;
 }
 
 @media (min-width: 992px) {
@@ -11858,9 +11848,8 @@ header.masthead .masthead-heading {
 /* my changes */
 #summary {
   width: 50%;
-  padding: 6em 0 0 0; /* my changes */
+  padding: 6em 0 0 0;
   margin: auto;
-  text-align: center;
 }
 #portfolio .portfolio-item {
   max-width: 26rem;
@@ -11877,7 +11866,8 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  /* background: rgba(255, 200, 0, 0.9); */
+  background: #008080b6;
   align-items: center;
   justify-content: center;
   opacity: 0;
