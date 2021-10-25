@@ -19,9 +19,9 @@
 /* Paragraph */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
-/* my changes */
+/* my custom design */
 ::selection {
-  background-color: #008080;
+  background-color: var(--bs-teal);
   color: white;
 }
 .summary {
@@ -36,23 +36,7 @@
 #carouselControls {
   margin-top: 2em;
 }
-/* .details ul {
-  list-style: none;
-}
-.details ul li::before {
-  content: "\2022";
-  color: #008080;
-  font-size: 1.5rem;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-@media only screen and (max-width: 375px) {
-  .small-screen {
-    display: block;
-  }
-} */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -60,9 +44,9 @@
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
-  --bs-yellow: #008080; /* my changes */
+  --bs-yellow: #ffef0e; /* my changes */
   --bs-green: #198754;
-  --bs-teal: #20c997;
+  --bs-teal: #008080;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
   --bs-gray: #6c757d;
@@ -315,7 +299,7 @@ sup {
 }
 
 a {
-  color: #008080;
+  color: var(--bs-teal);
   text-decoration: underline;
 }
 a:hover {
@@ -691,7 +675,7 @@ progress {
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
-  box-shadow: 1px 5px 15px -10px black;
+  box-shadow: 1px 5px 20px -10px #00a3a3cb;
 }
 
 .figure {
@@ -3183,8 +3167,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
-  background-color: red;
-  border-color: red;
+  background-color: var(--bs-red);
+  border-color: var(--bs-red);
 }
 .btn-primary:hover {
   color: #fff;
@@ -3463,13 +3447,13 @@ fieldset:disabled .btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #008080;
+  border-color: #008080;
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #006666;
+  border-color: #006666;
 }
 .btn-check:focus + .btn-dark,
 .btn-dark:focus {
@@ -4280,7 +4264,7 @@ fieldset:disabled .btn {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #008080;
+  color: var(--bs-teal);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4311,7 +4295,7 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   /* color: #495057; */
-  color: #008080;
+  color: var(--bs-teal);
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -6516,12 +6500,12 @@ fieldset:disabled .btn {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='teal'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
   /* background-color: black; */
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='teal'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .carousel-indicators {
@@ -11796,7 +11780,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #008080;
+  color: var(--bs-teal);
 }
 
 @media (min-width: 992px) {
@@ -11993,7 +11977,7 @@ header.masthead .masthead-heading {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #e9ecef;
+  background-color: #0080807e;
 }
 .timeline > li {
   position: relative;
@@ -12036,9 +12020,9 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #009e9ea9;
   border-radius: 100%;
-  background-color: #008080;
+  background-color: var(--bs-teal);
 }
 .timeline > li .timeline-image h4,
 .timeline > li .timeline-image .h4 {
@@ -12161,7 +12145,7 @@ header.masthead .masthead-heading {
 .team-member img {
   width: 14rem;
   height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border: 0.5rem solid var(--bs-teal);
 }
 .team-member h4,
 .team-member .h4 {
@@ -12179,6 +12163,7 @@ section#contact {
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 section#contact .section-heading {
   color: #fff;
