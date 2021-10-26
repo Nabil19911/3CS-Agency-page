@@ -49,3 +49,34 @@ window.addEventListener("DOMContentLoaded", event => {
     });
   });
 });
+
+// Form Control
+const form = document.querySelector("form");
+const btn = document.getElementById("submitButton");
+
+const validItems = (item, strName) => {
+  if (item.value.length === 0) {
+    item.nextElementSibling.classList.add("text-warning");
+    item.nextElementSibling.classList.remove(`hidden-${strName}`);
+    return false;
+  } else {
+    item.nextElementSibling.classList.remove("text-warning");
+    item.nextElementSibling.classList.add(`hidden-${strName}`);
+    return true;
+  }
+};
+
+btn.addEventListener("click", e => {
+  e.preventDefault();
+  // Name validation
+  let name = validItems(document.getElementById("name"), "name");
+  // Email validation
+  let email = validItems(document.getElementById("email"), "email");
+  // Phone validation
+  let phone = validItems(document.getElementById("phone"), "phone");
+  // Message validation
+  let message = validItems(document.getElementById("message"), "message");
+  if (name && phone && email && message) {
+    form.submit();
+  }
+});
