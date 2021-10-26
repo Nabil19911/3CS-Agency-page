@@ -48,6 +48,12 @@
 .hidden-message {
   display: none;
 }
+.hidden {
+  display: none;
+}
+.error-message {
+  color: red !important;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -55,7 +61,7 @@
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
-  --bs-yellow: #ffef0e; /* my changes */
+  --bs-yellow: #008080; /* my changes */
   --bs-green: #198754;
   --bs-teal: #008080;
   --bs-cyan: #0dcaf0;

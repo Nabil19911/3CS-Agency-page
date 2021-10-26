@@ -54,6 +54,7 @@ window.addEventListener("DOMContentLoaded", event => {
 const form = document.querySelector("form");
 const btn = document.getElementById("submitButton");
 
+// console.log(message.childNodes[1]);
 const validItems = (item, strName) => {
   if (item.value.length === 0) {
     item.nextElementSibling.classList.add("text-warning");
@@ -77,6 +78,10 @@ btn.addEventListener("click", e => {
   // Message validation
   let message = validItems(document.getElementById("message"), "message");
   if (name && phone && email && message) {
+    const message = document.querySelector(".success-message");
+    message.childNodes[1].style.display = "none";
+    message.childNodes[3].classList.remove("hidden");
     form.submit();
+    form.reset();
   }
 });
